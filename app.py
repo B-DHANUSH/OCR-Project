@@ -40,13 +40,13 @@ if uploaded_file:
                 text = extract_text_from_docx(uploaded_file)
 
     if text:
-        st.subheader("📜 Extracted Text:")
+        st.subheader("Extracted Text:")
         st.text_area("Text Output", value=text, height=300)
 
         # Download as .txt
         output_bytes = io.BytesIO(text.encode("utf-8"))
         st.download_button(
-            label="📥 Download Text File",
+            label="Download Text File",
             data=output_bytes,
             file_name="extracted_text.txt",
             mime="text/plain"
