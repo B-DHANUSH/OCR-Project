@@ -1,0 +1,6 @@
+streamlit
+pillow
+opencv-python
+pytesseract
+pdfplumber
+python-docx
